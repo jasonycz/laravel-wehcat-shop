@@ -41,6 +41,11 @@ class ProductsController extends Controller
         }
 
         $products = $builder->paginate(16);
+        // return response()->json([
+        //     'errno' => 0,
+        //     'errmsg' => '',
+        //     'data' => $products,
+        // ], 200);
 
         return view('products.index', [
             'products' => $products,
