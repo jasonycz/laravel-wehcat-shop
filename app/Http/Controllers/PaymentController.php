@@ -108,12 +108,11 @@ class PaymentController extends Controller
         }
 
         // 将订单标记为已支付
-        $order->update([
+        $res = $order->update([
             'paid_at' => Carbon::now(),
             'payment_method' => 'wechat',
             'payment_no' => $data->transaction_id,
         ]);
-
         $this->afterPaid($order);
         return app('wechat_pay')->success();
     }

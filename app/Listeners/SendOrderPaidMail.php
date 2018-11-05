@@ -5,6 +5,7 @@ namespace App\Listeners;
 use App\Events\OrderPaid;
 use App\Notifications\OrderPaidNotification;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Log;
 
 // implements ShouldQueue 代表异步监听器
 class SendOrderPaidMail implements ShouldQueue
@@ -27,6 +28,7 @@ class SendOrderPaidMail implements ShouldQueue
      */
     public function handle(OrderPaid $event)
     {
+        Log::info("aavvvvOrdddda");
         // 从事件对象中取出对应的订单
         $order = $event->getOrder();
         // 调用 notify 方法来发送通知
