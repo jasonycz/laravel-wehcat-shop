@@ -8,7 +8,6 @@ use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Log;
 
 class OrderPaid
 {
@@ -23,7 +22,6 @@ class OrderPaid
      */
     public function __construct(Order $order)
     {
-        Log::info("sdfsdfsdfs");
         $this->order = $order;
     }
 
