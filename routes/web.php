@@ -69,3 +69,14 @@ Route::group(['middleware' => 'auth'], function () {
 Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');
 Route::post('payment/wechat/notify', 'PaymentController@wechatNotify')->name('payment.wechat.notify');
 Route::post('payment/wechat/refund_notify', 'PaymentController@wechatRefundNotify')->name('payment.wechat.refund_notify');
+
+// Storage
+Route::group(["prefix" => "tools"], function () {
+    Route::get("upload", "ToolsController@upload")->name('tools.upload');
+    Route::post("upload", "ToolsController@create")->name('tools.upload');
+
+    Route::get("test", "ToolsController@index")->name('tools.index');
+    Route::get("uptoken", "ToolsController@uptoken")->name('tools.uptoken');
+});
+
+// Test
