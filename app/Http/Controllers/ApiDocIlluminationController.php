@@ -7,13 +7,33 @@ use Illuminate\Http\Request;
 class ApiDocIlluminationController extends Controller
 {
     /**
-     * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @api {get} /index apiDoc index
+     * @apiName index
+     * @apiGroup group
+     * @apiVersion  0.1.0
+     *
+     *
+     * @apiParam  {Number} id id of the apiDoc
+     *
+     * @apiSuccess (200) {Number} id id of item
+     *
+     * @apiParamExample  {Number} Request-Example:
+     * {
+     *     $id : 10
+     * }
+     *
+     *
+     * @apiSuccessExample {Number} Success-Response:
+     * {
+     *     id : 10
+     * }
+     *
+     *
      */
-    public function index()
+    public function index($id)
     {
-        //
+        return $id;
     }
 
     /**

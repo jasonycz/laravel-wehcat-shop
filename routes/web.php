@@ -78,5 +78,3 @@ Route::group(["prefix" => "tools"], function () {
     Route::get("test", "ToolsController@index")->name('tools.index');
     Route::get("uptoken", "ToolsController@uptoken")->name('tools.uptoken');
 });
-
-// Test

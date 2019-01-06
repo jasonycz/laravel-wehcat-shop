@@ -14,12 +14,21 @@
         "bootstrap-sass": "^3.3.7",
         "cross-env": "^5.1",
         "jquery": "^3.2",
-        "laravel-mix": "^1.0",
+        "laravel-mix": "^4.0.13",
         "lodash": "^4.17.4",
         "vue": "^2.5.7"
     },
     "dependencies": {
         "china-area-data": "^4.0.0",
         "sweetalert": "^2.1.0"
+    },
+    "apidoc": {
+        "name": "接口文档",
+        "version": "0.1.0",
+        "description": "小程序电商平台接口文档",
+        "apidoc": {
+            "title": "Custom apiDoc browser title",
+            "url": "http://shoujitaobao.smapp/apidoc/"
+        }
     }
 }

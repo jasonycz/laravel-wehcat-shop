@@ -1,0 +1,1 @@
+{  "name": "接口文档",  "version": "0.1.0",  "description": "小程序电商平台接口文档",  "apidoc": "0.3.0",  "sampleUrl": false,  "defaultVersion": "0.0.0",  "generator": {    "name": "apidoc",    "time": "2019-01-06T05:03:39.406Z",    "url": "http://apidocjs.com",    "version": "0.17.7"  }}
