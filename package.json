@@ -24,11 +24,22 @@
     },
     "apidoc": {
         "name": "接口文档",
-        "version": "0.1.0",
+        "version": "0.0.1",
         "description": "小程序电商平台接口文档",
-        "apidoc": {
-            "title": "Custom apiDoc browser title",
-            "url": "http://shoujitaobao.smapp/apidoc/"
+        "title": "接口文档",
+        "url": "https://shoujitaobao.smapp/api",
+        "sampleUrl": "http://shoujitaobao.smapp/api",
+        "header": {
+            "title": "接口文档说明",
+            "filename": "docs/apiDoc/header.md"
+        },
+        "footer": {
+            "title": "尾信息",
+            "filename": "docs/apiDoc/footer.md"
+        },
+        "template": {
+            "forceLanguage": "zh_cn",
+            "withCompare": true
         }
     }
 }
