@@ -1,5 +1,8 @@
 <?php
 
+// use Symfony\Component\Routing\Annotation\Route;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -77,4 +80,8 @@ Route::group(["prefix" => "tools"], function () {
 
     Route::get("test", "ToolsController@index")->name('tools.index');
     Route::get("uptoken", "ToolsController@uptoken")->name('tools.uptoken');
+});
+
+Route::group(["prefix" => "test"], function () {
+    Route::get("index", "TestController@index");
 });

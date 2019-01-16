@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+// use App;
 use Illuminate\Http\Request;
 
 class TestController extends Controller
@@ -13,7 +14,7 @@ class TestController extends Controller
      */
     public function index()
     {
-        //
+        dd(config('app.timezone'));
     }
 
     /**
